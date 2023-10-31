@@ -1,6 +1,7 @@
 // import "@/styles/globals.css"
 import { MoralisProvider } from "react-moralis"
 import { NotificationProvider } from "web3uikit"
+import "tailwindcss/tailwind.css"
 
 export default function App({ Component, pageProps }) {
     return (

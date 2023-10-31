@@ -1,0 +1,18 @@
+--2023-10-19 14:12:48--  https://nodejs.org/download/release/latest/win-x64/node.exe
+Resolving nodejs.org (nodejs.org)... 104.20.23.46, 104.20.22.46, 2606:4700:10::6814:172e, ...
+Connecting to nodejs.org (nodejs.org)|104.20.23.46|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 72041112 (69M) [application/octet-stream]
+Saving to: ‘utFile’
+
+
+
+2023-10-19 14:21:38 (28.6 KB/s) - Connection closed at byte 15384298. Retrying.
+
+--2023-10-19 14:21:39--  (try: 2)  https://nodejs.org/download/release/latest/win-x64/node.exe
+Connecting to nodejs.org (nodejs.org)|104.20.23.46|:443... connected.
+HTTP request sent, awaiting response... 206 Partial Content
+Length: 72041112 (69M), 56656814 (54M) remaining [application/octet-stream]
+Saving to: ‘utFile’
+
+utFile          22%  15.68M   111KB/s    eta 20m 11s    utFile          22%  15.72M   109KB/s    eta 20m 11s    utFile          22%  15.75M   105KB/s    eta 18m 55s    utFile          23%  15.81M  99.1KB/s    eta 18m 42s    utFile          23%  15.81M  88.5KB/s    eta 18m 42s    utFile          23%  15.82M  86.3KB/s    eta 19m 32s    utFile          23%  15.88M  85.4KB/s    eta 19m 32s    utFile          23%  15.97M  92.4KB/s    eta 17m 54s    utFile          23%  16.00M  86.7KB/s    eta 17m 54s    utFile          23%  16.00M  84.5KB/s    eta 18m 22s    utFile          23%  16.04M  81.2KB/s    eta 18m 22s    utFile          23%  16.04M  75.5KB/s    eta 19m 3s     utFile          23%  16.04M  70.6KB/s    eta 19m 3s     utFile          23%  16.05M  68.3KB/s    eta 19m 56s    utFile          23%  16.24M  79.6KB/s    eta 19m 56s    utFile          23%  16.30M  85.8KB/s    eta 19m 56s    utFile          23%  16.43M  88.5KB/s    eta 19m 56s    

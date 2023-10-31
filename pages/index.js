@@ -15,10 +15,9 @@ export default function Home() {
             </Head>
             {/* <ManualHeader /> */}
             <Header />
-            <LotteryEntrance/>
+            <LotteryEntrance />
             {/* create header / connect button / navbar */}
-            Hello!!
-            
+            Feeling Luckkery ?
         </div>
     )
 }

@@ -16,7 +16,11 @@ export default function LotteryEntrance() {
 
     const dispatch = useNotification()
 
-    const { runContractFunction: enterRaffle } = useWeb3Contract({
+    const {
+        runContractFunction: enterRaffle,
+        isFetching,
+        isLoading
+    } = useWeb3Contract({
         abi: abi,
         contractAddress: raffleAddress, //specify the network id
         functionName: "enterRaffle",
@@ -78,22 +82,29 @@ export default function LotteryEntrance() {
     }
 
     return (
-        <div>
+        <div className="p-5">
             Hi from lottery Entrance!
+            <div>Entrance Fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH </div>
             {raffleAddress ? (
-                <div>
+                <div className="">
                     <button
+                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-auto"
                         onClick={async function () {
                             await enterRaffle({
                                 onSuccess: handleSuccess
                             })
                         }}
+                        disabled={isLoading || isFetching}
                     >
-                        Enter Raffle
+                        {isLoading || isFetching ? (
+                            <div className="animate-spin spinner-border h-8 w-8 border-b-2 rounded-full"></div>
+                        ) : (
+                            <div>Enter Raffle</div>
+                        )}
                     </button>
-                    Entrance Fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH Number Of
-                    Players: {numPlayers}
-                    Recent Winner: {recentWinner}
+
+                    <div>Number Of Players: {numPlayers}</div>
+                    <div> Recent Winner: {recentWinner}</div>
                 </div>
             ) : (
                 <div>There's no Raffle Address Detected!</div>
